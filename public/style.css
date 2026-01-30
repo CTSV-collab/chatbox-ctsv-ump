@@ -10,25 +10,22 @@ html, body {
   background: #f5f6f7;
 }
 
-/* ================= CHATBOT CONTAINER ================= */
+/* ================= CONTAINER ================= */
 
 .chatbot-container {
   position: fixed;
-  bottom: 16px;
-  right: 16px;
+  bottom: 0;
+  right: 0;
 
-  width: 360px;
-  height: calc(100dvh - 32px);
-  max-height: 600px;
+  width: 100%;
+  max-width: 420px;
+  height: 100dvh;
 
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-
   display: flex;
   flex-direction: column;
 
-  z-index: 9999;
+  border-radius: 0;
 }
 
 /* ================= HEADER ================= */
@@ -58,69 +55,54 @@ html, body {
   color: #666;
 }
 
+/* ================= CONTENT ================= */
+
+.chat-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 /* ================= MESSAGES ================= */
 
 .chat-messages {
   flex: 1;
   padding: 14px;
   overflow-y: auto;
-  background: #fff;
 }
 
-/* ================= MESSAGE BUBBLES ================= */
+/* ================= MESSAGE ================= */
 
 .message {
   max-width: 80%;
   padding: 10px 14px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 12px;
   line-height: 1.4;
-  font-size: 14px;
 }
 
 .message.user {
   background: #0d6efd;
   color: #fff;
   margin-left: auto;
-  border-bottom-right-radius: 4px;
 }
 
 .message.bot {
   background: #e9ecef;
   color: #000;
   margin-right: auto;
-  border-bottom-left-radius: 4px;
 }
 
-/* ================= QUICK REPLIES ================= */
-
-.quick-replies {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 8px;
-  padding: 10px;
-
-  max-height: 72px;
-  overflow: hidden;
-
-  border-top: 1px solid #eee;
-  background: #fff;
-}
-
-.quick-replies.expanded {
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-/* ================= INPUT ================= */
+/* ================= INPUT (CỐ ĐỊNH ĐÁY) ================= */
 
 .chat-input {
   display: flex;
-  gap: 8px;
   padding: 10px;
   border-top: 1px solid #ddd;
   background: #fff;
-  flex-shrink: 0;
+
+  flex-shrink: 0; /* 🔥 quan trọng */
 }
 
 .chat-input input {
@@ -128,26 +110,26 @@ html, body {
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 14px;
 }
 
 .chat-input button {
+  margin-left: 8px;
   padding: 10px 16px;
   border: none;
   border-radius: 6px;
   background: #0d6efd;
-  color: #fff;
+  color: white;
   cursor: pointer;
-}
-
-.chat-input button:hover {
-  background: #0b5ed7;
 }
 
 /* ================= DESKTOP ================= */
 
 @media (min-width: 768px) {
   .chatbot-container {
+    bottom: 16px;
+    right: 16px;
     height: 600px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
   }
 }
