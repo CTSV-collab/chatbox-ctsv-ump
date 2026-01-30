@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Chatbot Phòng CTSV - UMP</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -22,7 +22,13 @@
         Bạn cần hỗ trợ nội dung gì?
       </div>
     </div>
-
+    <div class="quick-replies">
+  <button onclick="sendQuick('Học bổng sinh viên')">🎓 Học bổng</button>
+  <button onclick="sendQuick('Giấy xác nhận sinh viên')">📝 Giấy xác nhận</button>
+  <button onclick="sendQuick('Bảo hiểm y tế sinh viên')">🩺 Bảo hiểm</button>
+  <button onclick="sendQuick('Ký túc xá sinh viên')">🏠 Ký túc xá</button>
+  <button onclick="sendQuick('Liên hệ Phòng CTSV')">☎️ Liên hệ CTSV</button>
+</div>
     <div class="chat-input">
       <input
         type="text"

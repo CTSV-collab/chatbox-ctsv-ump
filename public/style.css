@@ -109,3 +109,23 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
 }
+.quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.quick-replies button {
+  background: #f1f3f5;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.quick-replies button:hover {
+  background: #e2e6ea;
+}
