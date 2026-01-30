@@ -6,7 +6,9 @@ const stringSimilarity = require("string-similarity");
 const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
-
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 /* =====================
    NORMALIZE TIẾNG VIỆT
 ===================== */
@@ -52,15 +54,36 @@ function loadData() {
 
 const intents = loadData();
 console.log(`📚 Đã load ${intents.length} intent`);
+/* =====================
+   LOG
+===================== */
+const logPath = path.join(__dirname, "logs", "chat-log.json");
+
+function logQuestion(question) {
+  const log = {
+    time: new Date().toISOString(),
+    question
+  };
+
+  let logs = [];
+  if (fs.existsSync(logPath)) {
+    logs = JSON.parse(fs.readFileSync(logPath, "utf8") || "[]");
+  }
+
+  logs.push(log);
+  fs.writeFileSync(logPath, JSON.stringify(logs, null, 2));
+}
 
 /* =====================
    CHAT API
 ===================== */
-app.post("/chat", (req, res) => {
+app.post("/chat", async (req, res) => {
+  console.log("🔥 /chat API CALLED");
   const questionRaw = req.body.question;
   if (!questionRaw) {
-    return res.json({ reply: "⚠️ Không nhận được câu hỏi." });
+    return res.json({ answer: "⚠️ Không nhận được câu hỏi." });
   }
+    logQuestion(questionRaw);
 
   const question = normalize(questionRaw);
   let bestMatch = null;
