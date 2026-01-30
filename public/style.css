@@ -110,3 +110,51 @@ html, body {
   border-radius: 50%;
   font-size: 18px;
 }
+/* QUICK REPLIES */
+.quick-toggle {
+  font-size: 13px;
+  color: #1877f2;
+  cursor: pointer;
+  padding: 6px 12px;
+  user-select: none;
+}
+
+.quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 12px;
+
+  max-height: 120px;
+  overflow: hidden;
+
+  transition: 
+    max-height 0.3s ease,
+    opacity 0.25s ease,
+    transform 0.25s ease;
+
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quick-replies button {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: none;
+  background: #f1f3f5;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.quick-replies button:hover {
+  background: #e9ecef;
+}
+
+/* TRẠNG THÁI THU GỌN */
+.quick-replies.hidden {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(8px);
+  padding-top: 0;
+  padding-bottom: 0;
+}

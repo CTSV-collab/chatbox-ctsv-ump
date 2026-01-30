@@ -19,12 +19,16 @@
     </div>
   </div>
 
-  <!-- CHAT -->
+  <!-- BODY: CHỈ CHỨA TIN NHẮN -->
   <div class="chat-body" id="chatMessages">
     <div class="message bot">
       👋 Xin chào! Tôi là Chatbot Phòng CTSV – Đại học Y Dược TPHCM.  
       Bạn cần hỗ trợ nội dung gì?
     </div>
+  </div>
+
+  <!-- FOOTER: DÍNH DƯỚI -->
+  <div class="chat-footer">
 
     <div class="quick-replies" id="quickReplies">
       <button onclick="sendQuick('Học bổng')">🎓 Học bổng</button>
@@ -34,12 +38,17 @@
       <button onclick="sendQuick('Vay vốn')">💰 Vay vốn</button>
       <button onclick="sendQuick('Liên hệ CTSV')">☎️ CTSV</button>
     </div>
-  </div>
 
-  <!-- INPUT -->
-  <div class="chat-input">
-    <input id="userInput" placeholder="Aa" />
-    <button onclick="sendMessage()">➤</button>
+    <div class="quick-toggle" onclick="toggleQuickReplies()">
+  Thu gọn ▲
+</div>
+
+    <div class="chat-input">
+      <input id="userInput" placeholder="Aa"
+        onkeydown="if(event.key==='Enter') sendMessage()" />
+      <button onclick="sendMessage()">➤</button>
+    </div>
+
   </div>
 
 </div>
@@ -47,3 +56,16 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+<script>
+function toggleQuickReplies() {
+  const qr = document.getElementById("quickReplies");
+  const toggle = document.querySelector(".quick-toggle");
+
+  qr.classList.toggle("hidden");
+
+  toggle.innerText = qr.classList.contains("hidden")
+    ? "Mở gợi ý ▼"
+    : "Thu gọn ▲";
+}
+</script>
