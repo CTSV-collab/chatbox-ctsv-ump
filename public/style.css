@@ -6,6 +6,7 @@
 body {
   background: #f5f6f7;
   margin: 0;
+  height: 100dvh;
 }
 
 .chat-container {
@@ -111,19 +112,27 @@ body {
 }
 .quick-replies {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;          /* ❗ KHÔNG wrap */
   gap: 8px;
-  padding: 10px;
+  padding: 8px 10px;
+  overflow-x: auto;           /* ❗ cho vuốt ngang */
   border-top: 1px solid #eee;
+  background: #fff;
+}
+
+.quick-replies::-webkit-scrollbar {
+  display: none;              /* ẩn thanh scroll */
 }
 
 .quick-replies button {
+  flex-shrink: 0;             /* ❗ KHÔNG co nút */
   background: #f1f3f5;
   border: none;
-  border-radius: 20px;
-  padding: 8px 14px;
+  border-radius: 16px;
+  padding: 6px 12px;
   font-size: 13px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .quick-replies button:hover {
