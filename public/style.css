@@ -47,6 +47,7 @@ html, body {
   flex: 1;
   padding: 12px;
   overflow-y: auto;
+  padding-bottom: 120px; 
 }
 
 /* MESSAGE */
