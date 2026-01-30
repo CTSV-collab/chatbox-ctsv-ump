@@ -18,18 +18,18 @@
 
     <div class="chat-messages" id="chatMessages">
       <div class="message bot">
-        👋 Xin chào! Tôi là Chatbot Phòng Công tác Sinh viên – UMP.  
+        👋 Xin chào! Tôi là Chatbot Phòng Công tác Sinh viên – Đại học Y Dược TPHCM.  
         Bạn cần hỗ trợ nội dung gì?
       </div>
-    </div>
-    <div class="quick-replies">
-  <button onclick="sendQuick('Học bổng sinh viên')">🎓 Học bổng</button>
-  <button onclick="sendQuick('Giấy xác nhận sinh viên')">📝 Giấy xác nhận</button>
-  <button onclick="sendQuick('Bảo hiểm y tế sinh viên')">🩺 Bảo hiểm</button>
-  <button onclick="sendQuick('Ký túc xá sinh viên')">🏠 Ký túc xá</button>
-  <button onclick="sendQuick('Vay vốn sinh viên')">💰 Vay vốn</button>
-  <button onclick="sendQuick('Liên hệ Phòng CTSV')">☎️ Liên hệ CTSV</button>
+    <div class="quick-replies" id="quickReplies">
+  <button class="qr" onclick="sendQuick('Học bổng sinh viên')">🎓 Học bổng</button>
+  <button class="qr" onclick="sendQuick('Giấy xác nhận sinh viên')">📝 Giấy xác nhận</button>
+  <button class="qr" onclick="sendQuick('Bảo hiểm y tế sinh viên')">🩺 Bảo hiểm Y tế</button>
+  <button class="qr" onclick="sendQuick('Ký túc xá sinh viên')">🏠 Ký túc xá</button>
+  <button class="qr" onclick="sendQuick('Vay vốn sinh viên')">💰 Vay vốn</button>
+  <button class="qr" onclick="sendQuick('Liên hệ Phòng CTSV')">☎️ Liên hệ CTSV</button>
 </div>
+
 <div class="toggle-quick" onclick="toggleQuickReplies()">
   ⋯ Xem thêm
 </div>
