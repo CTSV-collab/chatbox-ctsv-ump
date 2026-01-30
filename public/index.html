@@ -2,60 +2,48 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Chatbot Phòng CTSV - UMP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot CTSV - UMP</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="chat-container">
-    <div class="chat-header">
-      <img src="logo.png" alt="Logo" class="logo">
-      <div>
-        <div class="title">Chatbot Phòng CTSV - UMP</div>
-        <div class="subtitle">Hỗ trợ thông tin sinh viên</div>
-      </div>
-    </div>
+<div class="app">
 
-    <div class="chat-messages" id="chatMessages">
-      <div class="message bot">
-        👋 Xin chào! Tôi là Chatbot Phòng Công tác Sinh viên – Đại học Y Dược TPHCM.  
-        Bạn cần hỗ trợ nội dung gì?
-      </div>
-    <div class="quick-replies" id="quickReplies">
-  <button class="qr" onclick="sendQuick('Học bổng sinh viên')">🎓 Học bổng</button>
-  <button class="qr" onclick="sendQuick('Giấy xác nhận sinh viên')">📝 Giấy xác nhận</button>
-  <button class="qr" onclick="sendQuick('Bảo hiểm y tế sinh viên')">🩺 Bảo hiểm Y tế</button>
-  <button class="qr" onclick="sendQuick('Ký túc xá sinh viên')">🏠 Ký túc xá</button>
-  <button class="qr" onclick="sendQuick('Vay vốn sinh viên')">💰 Vay vốn</button>
-  <button class="qr" onclick="sendQuick('Liên hệ Phòng CTSV')">☎️ Liên hệ CTSV</button>
-</div>
-
-<div class="toggle-quick" onclick="toggleQuickReplies()">
-  ⋯ Xem thêm
-</div>
-    <div class="chat-input">
-      <input
-        type="text"
-        id="userInput"
-        placeholder="Nhập câu hỏi của bạn..."
-        onkeydown="if(event.key==='Enter') sendMessage()"
-      />
-      <button onclick="sendMessage()">Gửi</button>
+  <!-- HEADER -->
+  <div class="chat-header">
+    <img src="logo.png" class="logo">
+    <div>
+      <div class="title">Chatbot Phòng CTSV - UMP</div>
+      <div class="subtitle">Hỗ trợ thông tin sinh viên</div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- CHAT -->
+  <div class="chat-body" id="chatMessages">
+    <div class="message bot">
+      👋 Xin chào! Tôi là Chatbot Phòng CTSV – Đại học Y Dược TPHCM.  
+      Bạn cần hỗ trợ nội dung gì?
+    </div>
+
+    <div class="quick-replies" id="quickReplies">
+      <button onclick="sendQuick('Học bổng')">🎓 Học bổng</button>
+      <button onclick="sendQuick('Giấy xác nhận')">📝 Giấy xác nhận</button>
+      <button onclick="sendQuick('BHYT')">🩺 BHYT</button>
+      <button onclick="sendQuick('Ký túc xá')">🏠 KTX</button>
+      <button onclick="sendQuick('Vay vốn')">💰 Vay vốn</button>
+      <button onclick="sendQuick('Liên hệ CTSV')">☎️ CTSV</button>
+    </div>
+  </div>
+
+  <!-- INPUT -->
+  <div class="chat-input">
+    <input id="userInput" placeholder="Aa" />
+    <button onclick="sendMessage()">➤</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-<script>
-function toggleQuickReplies() {
-  const qr = document.getElementById("quickReplies");
-  const toggle = document.querySelector(".toggle-quick");
-
-  qr.classList.toggle("expanded");
-
-  toggle.innerText = qr.classList.contains("expanded")
-    ? "Thu gọn ▲"
-    : "⋯ Xem thêm";
-}
-</script>
