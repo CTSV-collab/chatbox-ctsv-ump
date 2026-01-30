@@ -33,3 +33,8 @@ async function sendMessage() {
 
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }
+function sendQuick(text) {
+  const input = document.getElementById("userInput");
+  input.value = text;
+  sendMessage();
+}
