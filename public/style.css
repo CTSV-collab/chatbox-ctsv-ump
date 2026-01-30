@@ -46,7 +46,8 @@ body {
   flex: 1;
   padding: 15px;
   overflow-y: auto;
-  min-height: 0; /* ⭐ FIX flex bug (CỰC KỲ QUAN TRỌNG) */
+  min-height: 0;
+  background: #fff;
 }
 
 .message {
@@ -77,12 +78,12 @@ body {
   border-top: 1px solid #ddd;
 }
 
-.chat-input input {
-  flex: 1;
+.chat-input {
+  display: flex;
   padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  outline: none;
+  border-top: 1px solid #ddd;
+  flex-shrink: 0;      /* ⭐ RẤT QUAN TRỌNG */
+  background: #fff;
 }
 
 .chat-input button {
