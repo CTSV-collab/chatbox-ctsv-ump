@@ -27,7 +27,11 @@
   <button onclick="sendQuick('Giấy xác nhận sinh viên')">📝 Giấy xác nhận</button>
   <button onclick="sendQuick('Bảo hiểm y tế sinh viên')">🩺 Bảo hiểm</button>
   <button onclick="sendQuick('Ký túc xá sinh viên')">🏠 Ký túc xá</button>
+  <button onclick="sendQuick('Vay vốn sinh viên')">💰 Vay vốn</button>
   <button onclick="sendQuick('Liên hệ Phòng CTSV')">☎️ Liên hệ CTSV</button>
+</div>
+<div class="toggle-quick" onclick="toggleQuickReplies()">
+  ⋯ Xem thêm
 </div>
     <div class="chat-input">
       <input
@@ -43,3 +47,15 @@
   <script src="script.js"></script>
 </body>
 </html>
+<script>
+function toggleQuickReplies() {
+  const qr = document.getElementById("quickReplies");
+  const toggle = document.querySelector(".toggle-quick");
+
+  qr.classList.toggle("expanded");
+
+  toggle.innerText = qr.classList.contains("expanded")
+    ? "Thu gọn ▲"
+    : "⋯ Xem thêm";
+}
+</script>

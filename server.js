@@ -6,9 +6,11 @@ const stringSimilarity = require("string-similarity");
 const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
 /* =====================
    NORMALIZE TIẾNG VIỆT
 ===================== */
@@ -54,24 +56,32 @@ function loadData() {
 
 const intents = loadData();
 console.log(`📚 Đã load ${intents.length} intent`);
-/* =====================
-   LOG
-===================== */
-const logPath = path.join(__dirname, "logs", "chat-log.json");
 
-function logQuestion(question) {
-  const log = {
-    time: new Date().toISOString(),
-    question
-  };
+/* =====================
+   LOG LOCAL (JSON)
+===================== */
+const logDir = path.join(__dirname, "logs");
+const logPath = path.join(logDir, "chat-log.json");
+
+function logQuestion(questionRaw) {
+  if (!questionRaw) return;
+
+  if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir);
+  }
 
   let logs = [];
   if (fs.existsSync(logPath)) {
     logs = JSON.parse(fs.readFileSync(logPath, "utf8") || "[]");
   }
 
-  logs.push(log);
+  logs.push({
+    time: new Date().toISOString(),
+    question: questionRaw
+  });
+
   fs.writeFileSync(logPath, JSON.stringify(logs, null, 2));
+  console.log("📝 Logged question:", questionRaw);
 }
 
 /* =====================
@@ -79,11 +89,14 @@ function logQuestion(question) {
 ===================== */
 app.post("/chat", async (req, res) => {
   console.log("🔥 /chat API CALLED");
+
   const questionRaw = req.body.question;
   if (!questionRaw) {
     return res.json({ answer: "⚠️ Không nhận được câu hỏi." });
   }
-    logQuestion(questionRaw);
+
+  // ✅ LOG LOCAL DUY NHẤT
+  logQuestion(questionRaw);
 
   const question = normalize(questionRaw);
   let bestMatch = null;
@@ -113,7 +126,7 @@ app.post("/chat", async (req, res) => {
     return res.json({ answer: bestMatch.answer });
   }
 
-  res.json({
+  return res.json({
     answer:
       "🤔 Mình chưa chắc chắn câu hỏi này. Bạn có thể hỏi theo cách khác hoặc liên hệ trực tiếp Phòng CTSV nhé!"
   });

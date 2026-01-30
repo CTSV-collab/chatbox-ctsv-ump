@@ -2,12 +2,16 @@
   {
     "intent": "gio_lam_viec",
     "questions": [
-      "giờ làm việc",
+      "giờ làm việc phòng CTSV",
       "thời gian làm việc",
-      "phòng công tác sinh viên làm việc khi nào",
-      "giờ làm việc của phòng"
+      "phòng ctsv làm việc khi nào",
+      "mấy giờ phòng ctsv làm việc",
+      "giờ làm việc của phòng",
+      "phòng làm việc đến mấy giờ",
+      "chiều nay phòng có làm không",
+      "sáng phòng có làm không"
     ],
-    "answer": "Phòng Công tác Sinh viên làm việc từ thứ Hai đến thứ Sáu, buổi sáng từ 07h00-11h30, buổi chiều từ 13h00-16h30."
+    "answer": "Phòng Công tác Sinh viên làm việc từ thứ Hai đến thứ Sáu, \n Buổi sáng từ 07h00-11h30 \n Buổi chiều từ 13h00-16h30."
   },
   {
     "intent": "ngay_khong_lam_viec",
