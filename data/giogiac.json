@@ -1,0 +1,17 @@
+[
+  {
+    "intent": "gio_lam_viec",
+    "questions": [
+      "giờ làm việc",
+      "thời gian làm việc",
+      "phòng công tác sinh viên làm việc khi nào",
+      "giờ làm việc của phòng"
+    ],
+    "answer": "Phòng Công tác Sinh viên làm việc từ thứ Hai đến thứ Sáu, buổi sáng từ 07h00-11h30, buổi chiều từ 13h00-16h30."
+  },
+  {
+    "intent": "ngay_khong_lam_viec",
+    "questions": ["thứ bảy", "cuối tuần", "phòng có làm việc vào cuối tuần không"],
+    "answer": "Phòng không làm việc vào thứ Bảy, Chủ nhật và các ngày lễ theo quy định."
+  }
+]

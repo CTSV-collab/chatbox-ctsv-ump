@@ -1,0 +1,61 @@
+  [
+    {
+    "intent": "diem_ren_luyen",
+    "questions": [
+      "điểm rèn luyện",
+      "chấm điểm rèn luyện",
+      "xét điểm rèn luyện",
+      "quy định điểm rèn luyện"
+    ],
+    "answer": "📊 **Quy định chấm điểm rèn luyện sinh viên UMP** xem tại:<br>👉 <a href='/docs/5158_quy_che_danh_gia_ket_qua_ren_luyen.pdf' target='_blank'>Xem / tải file PDF</a>"
+  },
+
+  {
+    "intent": "quy_che_cong_tac_sinh_vien",
+    "questions": [
+    "quy chế công tác sinh viên",
+    "quy chế sinh viên",
+    "quy định công tác sinh viên",
+    "quy định sinh viên"
+    ],
+    "answer": "📘 **Quy chế Công tác Sinh viên – UMP** xem tại:<br>👉 <a href='/docs/1691qd_ban_hanh_quy_che_ctsv_dhyd_tphcm.pdf'target='_blank'>Xem / tải file PDF</a>"
+  },
+
+  {
+    "intent": "quy_che_hoc_bong",
+    "questions": [
+      "quy chế học bổng",
+      "quy định học bổng"
+    ],
+    "answer": "📗 **Quy chế học bổng - UMP** xem tại:<br>👉 <a href='/docs/1497qd_ban_hanh_quy_dinh_ve_chinh_sach_hoc_bong_cho_sv_dai_hoc_chinh_quy_tai_dhyd_tphcm.pdf'target='_blank'>Xem / tải file PDF</a>"
+  },
+
+  {
+    "intent": "giay_xac_nhan",
+    "questions": [
+      "giấy xác nhận sinh viên",
+      "xin giấy xác nhận",
+      "làm giấy xác nhận"
+    ],
+    "answer": "📝 Sinh viên xin **giấy xác nhận** trên hệ thống sinh viên hoặc liên hệ Phòng CTSV."
+  },
+
+  {
+    "intent": "tam_hoan_nghia_vu",
+    "questions": [
+      "tạm hoãn nghĩa vụ quân sự",
+      "giấy tạm hoãn nghĩa vụ"
+    ],
+    "answer": "🪖 Phòng CTSV hỗ trợ xác nhận **tạm hoãn nghĩa vụ quân sự** theo quy định hiện hành."
+  },
+
+  {
+    "intent": "lien_he_ctsv",
+    "questions": [
+      "liên hệ phòng ctsv",
+      "số điện thoại phòng ctsv",
+      "email phòng ctsv"
+    ],
+    "answer": "☎️ **Phòng Công tác Sinh viên – UMP**\n📍 Lầu 1 - Tòa nhà 15 tầng - Cơ sở 217 Hồng Bàng, Phường Chợ Lớn, TPHCM\n📧 Email: ctsv@ump.edu.vn & ☎️ SĐT: 028.38537976."
+  }
+]

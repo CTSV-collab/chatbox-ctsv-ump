@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chatbot Phòng CTSV - UMP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="logo.png" alt="Logo" class="logo">
+      <div>
+        <h1>Chatbot Phòng CTSV - UMP</h1>
+        <p>Hỗ trợ thông tin sinh viên</p>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="message bot">
+        👋 Xin chào! Tôi là Chatbot Phòng Công tác Sinh viên – UMP.  
+        Bạn cần hỗ trợ nội dung gì?
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Nhập câu hỏi của bạn..."
+        onkeydown="if(event.key==='Enter') sendMessage()"
+      />
+      <button onclick="sendMessage()">Gửi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

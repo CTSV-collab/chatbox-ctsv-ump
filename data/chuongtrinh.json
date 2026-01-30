@@ -1,0 +1,12 @@
+[
+  {
+    "intent": "dong_hoc_phi",
+    "questions": [
+      "khi nào đóng học phí",
+      "thời gian đóng học phí",
+      "bao giờ nộp học phí",
+      "hạn đóng học phí"
+    ],
+    "answer": "Sinh viên đóng học phí theo thông báo của Nhà trường..."
+  }
+]
