@@ -17,7 +17,7 @@
     "học bổng nhập học",
     "học bổng dành cho sinh viên năm nhất"
   ],
-  "answer": "🎓 Nhà trường có nhiều <b>chương trình học bổng</b> dành cho sinh viên như:<br>- <b>Học bổng khuyến học</b>: Là học bổng được Nhà trường xét dựa trên kết quả học tập và điểm rèn luyện của sinh viên trong từng năm học theo quy định. <br> <b>- Học bổng tài trợ: </b> là học bổng do các tổ chức, cá nhân ngoài Trường tài trợ cho sinh viên.<br>Điều kiện nhận học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ và được nêu rõ trong thông báo học bổng. <br><b>- Học bổng Tân sinh viên<b>:là học bổng dành cho sinh viên trúng tuyển và nhập học trong năm học mới theo tiêu chí của Nhà trường.<br>📌 Thông báo điều kiện, mức học bổng và thời gian xét sẽ được đăng trên fanpage Phòng CTSV và cổng thông tin sinh viên. <br> Ngoài ra, sinh viên sẽ được hướng dẫn các thông tin về Tuần Sinh hoạt công dân, học bổng, BHYT khi thực hiện đăng ký nhập học. <br>📌 Thông báo chi tiết sẽ được đăng trên <a href='https://sv.ump.edu.vn/sinh-vien-dang-nhap.html' target='_blank'>website</a> và <a href='https://www.facebook.com/ctsv.ump' target='_blank'>fanpage Phòng CTSV</a>"
+  "answer": "🎓 Nhà trường có nhiều <b>chương trình học bổng</b> dành cho sinh viên như:<br>- <b>Học bổng khuyến học</b>: Là học bổng được Nhà trường xét dựa trên kết quả học tập và điểm rèn luyện của sinh viên trong từng năm học theo quy định. <br> <b>- Học bổng tài trợ: </b> là học bổng do các tổ chức, cá nhân ngoài Trường tài trợ cho sinh viên.<br>Điều kiện nhận học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ và được nêu rõ trong thông báo học bổng. <br><b>- Học bổng Tân sinh viên</b>: là học bổng dành cho sinh viên trúng tuyển và nhập học trong năm học mới theo tiêu chí của Nhà trường.<br>📌 Thông báo điều kiện, mức học bổng và thời gian xét sẽ được đăng trên fanpage Phòng CTSV và cổng thông tin sinh viên. <br> Ngoài ra, sinh viên sẽ được hướng dẫn các thông tin về Tuần Sinh hoạt công dân, học bổng, BHYT khi thực hiện đăng ký nhập học. <br>📌 Thông báo chi tiết sẽ được đăng trên <a href='https://sv.ump.edu.vn/sinh-vien-dang-nhap.html' target='_blank'>website</a> và <a href='https://www.facebook.com/ctsv.ump' target='_blank'>fanpage Phòng CTSV</a>"
 },  
 
   {
@@ -39,12 +39,11 @@
 {
   "intent": "dieu_kien_hoc_bong",
   "questions": [
-    "điều kiện xét học bổng",
-    "gpa bao nhiêu thì được học bổng",
-    "điểm rèn luyện bao nhiêu thì được học bổng",
-    "cần đạt gì để được học bổng",
-    "điều kiện nhận học bổng",
-    "làm thế nào để có học bổng"
+    "điều kiện xét",
+    "gpa bao nhiêu thì được",
+    "điểm rèn luyện bao nhiêu thì được",
+    "cần đạt gì để được",
+    "điều kiện nhận"
   ],
   "answer": "<b>Học bổng Tân Sinh viên</b> dành cho Tân sinh viên của mỗi năm học, Sinh viên vui lòng theo dõi thông báo chính thức của Phòng CTSV để biết điều kiện cụ thể của năm học hiện tại.<br><br> <b>Học bổng Khuyến học</b> được xét dựa trên kết quả học tập và điểm rèn luyện của sinh viên.<br>Sinh viên cần đạt kết quả học tập và điểm rèn luyện từ loại <b>Khá</b> trở lên theo quy định của Nhà trường, cụ thể: <br> Xuất sắc: GPA: ≥ 3,60 và ĐRL ≥ 90 => 100%HP <br> Giỏi: GPA ≥ 3,20 và ĐRL ≥ 80 => 75%HP <br> Khá: GPA ≥ 2,50 và ĐRL ≥ 65 => 50%HP <br><br> <b>Học bổng tài trợ: </b> Điều kiện xét học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ như:<br>- Kết quả học tập<br>- Điểm rèn luyện<br>- Hoàn cảnh gia đình<br>- Tham gia hoạt động xã hội<br><br>Sinh viên vi phạm kỷ luật hoặc bị cảnh báo học tập có thể không đủ điều kiện xét học bổng."
 },
@@ -52,13 +51,12 @@
 {
   "intent": "thoi_gian_xet_hoc_bong",
   "questions": [
-    "khi nào xét học bổng",
-    "bao giờ xét học bổng",
-    "xét học bổng khi nào",
-    "học bổng xét theo năm hay học kỳ",
-    "thời gian nộp học bổng",
-    "hạn nộp học bổng",
-    "học bổng đầu vào xét lúc nào"
+    "khi nào xét",
+    "bao giờ xét",
+    "xét khi nào",
+    "xét theo năm hay học kỳ",
+    "thời gian nộp",
+    "hạn nộp học bổng"
   ],
   "answer": "🗓️ <b>Thời gian xét/nộp Học bổng Tân sinh viên</b> sẽ theo thông báo từng năm học<br><br> <b>Học bổng Khuyến học</b> được xét sau khi kết thúc năm học, dựa trên kết quả học tập và rèn luyện của sinh viên. <br><br> <b>Học bổng tài trợ:</b> Thời gian xét/nộp học bổng tài trợ sẽ được nêu cụ thể trong các thông báo học bổng."
 },
@@ -66,12 +64,12 @@
 {
   "intent": "ket_qua_hoc_bong",
   "questions": [
-    "bao giờ có kết quả học bổng",
-    "khi nào có danh sách học bổng",
+    "bao giờ có kết quả",
+    "khi nào có danh sách",
     "xem kết quả học bổng ở đâu",
     "có email báo kết quả không",
     "không đậu thì có biết lý do không",
-    "bao lâu thì được nhận tiền học bổng"
+    "bao lâu thì được nhận"
   ],
   "answer": "Danh sách sinh viên được nhận các loại học bổng sẽ được Nhà trường công bố sau khi hoàn tất quá trình xét duyệt.<br>Sinh viên vui lòng theo dõi thông báo trên cổng thông tin sinh viên và fanpage của Phòng Công tác sinh viên."
 },
@@ -79,9 +77,8 @@
   {
   "intent": "gia_tri_hoc_bong",
   "questions": [
-    "một suất học bổng tài trợ bao nhiêu tiền",
-    "học bổng được bao nhiêu tiền",
-    "học bổng có phải trả lại không"
+    "một suất bao nhiêu tiền",
+    "được bao nhiêu tiền"
   ],
   "answer": "Giá trị học bổng tài trợ phụ thuộc vào quy định của Nhà tài trợ."
   },
@@ -89,8 +86,8 @@
   {
   "intent": "ho_so_hoc_bong",
   "questions": [
-    "hồ sơ xin học bổng gồm gì",
-    "có mẫu đơn xin học bổng không",
+    "hồ sơ xin gồm những gì",
+    "có mẫu đơn xin không",
     "nộp hồ sơ online hay giấy",
     "có cần xác nhận địa phương không",
     "thiếu giấy tờ có bổ sung được không",
